@@ -1,0 +1,10 @@
+body{
+    background-image: url("http://www.jsc.edu/images/uploads/generic-pages/xpsychologybanner.jpg.pagespeed.ic.So9ynOGCs2.jpg");
+    background-size: 120%;
+}
+h1,p{
+    color: white;
+    font-family: cursive;
+    text-align: center;
+    font-size: 180%;
+}
