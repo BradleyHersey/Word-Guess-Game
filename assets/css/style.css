@@ -3,6 +3,7 @@ body{
     background-size: 120%;
 }
 h1,p{
+    margin: 30px;
     color: white;
     font-family: cursive;
     text-align: center;

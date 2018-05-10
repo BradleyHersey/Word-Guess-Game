@@ -1,11 +1,11 @@
+
 var theAnswer = ["b", "r", "a", "d", "l", "e", "y"];
 var Right = 0,
     NiceTry = 0,
     GuessesLeft = 10,
     Picks = null,
     answerArray = [];
-
-        
+    
 document.onkeydown = function (event) {
     var yourGuess = event.key;
     console.log(theAnswer);
@@ -27,19 +27,20 @@ document.onkeydown = function (event) {
 
     } if ((Right === 5)) {
         document.body.style.backgroundImage = "url('http://m.memegen.com/ymurbu.jpg')";
-        document.getElementById('#myAudio').play();
-       
-
+        document.getElementById('sound').play();
+     
     } else if ((NiceTry === 7)) {
         document.body.style.backgroundImage = "url('http://i.bettermeme.com/meme/img/0/0/u/m/00um.jpg')";
+        document.getElementById('sound1').play();
     }
-    
+
+
     var html =
-            "<p>Your Guess: " + yourGuess + "</p>" +
-            "<p>What I Was Thinking: " + myAnswer + "</p>" +
-            "<p>Right: " + Right + "</p>" +
-            "<p>Nice Try: " + NiceTry + "</p>" +
-            "<p>Guesses Left: " + GuessesLeft + "</p>" ;
+        "<p>Your Guess: " + yourGuess + "</p>" +
+        "<p>What I Was Thinking: " + myAnswer + "</p>" +
+        "<p>Right: " + Right + "</p>" +
+        "<p>Nice Try: " + NiceTry + "</p>" +
+        "<p>Guesses Left: " + GuessesLeft + "</p>";
 
     document.querySelector("#game").innerHTML = html;
 
